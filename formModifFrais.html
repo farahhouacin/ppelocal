@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulter/Modifier Frais</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light     sticky-top">
+            <a class="navbar-brand" href="#"><img src="logo.jpg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="accueil.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bureaux.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav pull-right" style="color:black">
+                    <li class="nav-item">
+                        <a style="color:black" class="nav-link" href="#"><i class="fas fa-envelope mr-2" id="fa-contact"></i>DÉCONNEXION</a>
+                    </li>
+                    <a href="#" class="nav-link" data-toggle="dropdown" id="accountDropdownLink" style="color:black">
+                        PRÉNOM NOM
+                    </a>
+                </ul>
+            </div>
+        </nav>
+</head>
+<body>
+    <div class="container">
+        
+        <h1 class="text-center mb-4">
+            Remboursement de frais du mois ****
+        </h1>
+        
+    <div class="col-6" id="global">
+        <div class="card border-primary py-3 px-3 mb-3">
+            <div class="card-body text-center">
+                <table>
+                    <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                        <tr>
+                            <td> Visiteurs </td>
+                            <td><input type="text" placeholder="Nom Prénom"></td>
+                        </tr>
+                        <tr>
+                            <td> Mois </td>
+                            <td><input type="date" placeholder="Sélectionner le mois"></td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+        </div>
+
+    </div>
+
+    <h3 style="text-align: center"> Frais forfaitaires</h3>
+    <div class="card border-primary py-3 px-3 mb-3">
+        <div class="card-body">
+            <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Frais forfaitaires</th>
+                    <th scope="col">Quantité</th>
+                    <th scope="col">Montant unitaire</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><label class="form-control-label"><strong>Nuitées</strong></label></td>
+                    <td><input type="number"></td>
+                    <td>80€</td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm mr-2" data-action="delete" data-target="">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <button type="button" class="btn btn-success btn-sm" data-action="delete" data-target="">
+                            <i class="fas fa-edit"></i>
+                        </button>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="" class="form-control-label"><strong>Repas</strong></label></td>
+                    <td><input type="number"></td>
+                    <td>29€</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><label for="" class="form-control-label"><strong>Kilométrage</strong></label></td>
+                    <td><input type="number"></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>    
+    
+<br>
+
+    <h3>Frais hors-forfaits</h3>
+
+    <div class="card border-primary py-3 px-3">
+        <div class="card-body">
+            <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Dates</th>
+                    <th scope="col">Libellé</th>
+                    <th scope="col">Montant</th>
+                    <th scope="col"> Justificatifs</th>
+                    <th scope="col"> Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="date"></td>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                    <td> <input type="file"></td>
+                    <td>
+                        <button type="button" class="btn btn-danger btn-sm mr-2" data-action="delete" data-target="">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <button type="button" class="btn btn-success btn-sm" data-action="delete" data-target="">
+                            <i class="fas fa-edit"></i>
+                        </button>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="date"></td>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                    <td> <input type="file"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="" class="form-control-label"></label></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+    <div class="col text-center">
+        <button type="submit" class="btn btn-primary mt-3 mb-3" style="color:white">Enregistrer ! </button>
+    </div>
+
+
+
+</div>
+    <script src="https://kit.fontawesome.com/636fc0bf1f.js" crossorigin="anonymous"></script>
+    <script src="js\jquery.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js\popper.min.js"></script>
+    <script src="js\parallax.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.modal {
+    max-width: 90vw;
+    max-height: 90vh;
+}
+.fraishorsforfait {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}

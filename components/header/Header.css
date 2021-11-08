@@ -1,0 +1,7 @@
+.logo {
+    height:50px;
+    width:70px;
+    background-size: 100%;
+    background-image: url(gsb.jpg);
+    background-repeat:no-repeat;
+}
